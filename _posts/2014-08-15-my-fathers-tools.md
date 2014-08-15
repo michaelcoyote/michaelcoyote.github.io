@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Father's tools.."
+title: "my father's tools.."
 description: ""
 category: 
 tags: [awk,tech,tools,coyote]
@@ -28,7 +28,7 @@ Let's look at an average Linux system log. In this case syslog on Debian. I'll u
 
 I'm just going to run awk with the print command and  it will print every line in the file.  Normally I'd use aa pager like less to get a sense of the data structure, but this is for purposes of demonstration.
 
-```
+{% highlight %}
 michael@flaptop-deux ~/working/basic_commands $ awk '{ print }' /var/log/syslog.1
 Jul 29 07:53:40 flaptop-deux rsyslogd: [origin software="rsyslogd" swVersion="5.8.6" x-pid="1023" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
 Jul 29 07:56:26 flaptop-deux anacron[32680]: Job `cron.daily' terminated
@@ -89,7 +89,7 @@ Jul 29 21:39:01 flaptop-deux CRON[8752]: (root) CMD (  [ -x /usr/lib/php5/maxlif
 Jul 29 22:09:01 flaptop-deux CRON[9007]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
 Jul 29 22:17:01 flaptop-deux CRON[9080]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
 Jul 29 22:39:01 flaptop-deux CRON[9249]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-```
+{% endhighlight %}
 
 Let's say we want to sift through the log to find every segmentation fault and print the line.  For that you would add a search string before the print line.
 

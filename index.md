@@ -5,9 +5,7 @@ tagline: easy (and difficult) listening for all free tricksers...
 ---
 {% include JB/setup %}
 
-Just playing around with Jekyll and github blogs
-
-Here, have a gorilla:
+#### Here, have a gorilla:
 
 <ul class="posts">
   {% for post in site.posts %}

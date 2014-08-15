@@ -118,7 +118,9 @@ To be able to get the seconds back into our data, we will have to take the third
 
 ```
 michael@flaptop-deux ~/working/basic_commands $ awk -F: '/segfault/ { split($3,s," ")  
+
 print $1":"$2":"s[1]","$5}' /var/log/syslog.1  
+
 Jul 29 08:45:12, segfault at 18 ip 00007f2b7fbff970 sp 00007fff3d3e8068 error 4 in libgdk-3.so.0.400.2[7f2b7fbc8000+79000]  
 ```
 

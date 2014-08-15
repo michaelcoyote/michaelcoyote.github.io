@@ -26,7 +26,7 @@ Below is an example of the sort of basic stuff I do with awk. I knocked this tog
 
 Let's look at an average Linux system log. In this case syslog on Debian. I'll used the most recently rotated out "syslog.1" file (I've manually cut out a number of lines since it's pretty big).
 
-I'm just going to run awk with the print command and  it will print every line in the file.  Normally I'd use aa pager like less to get a sense of the data structure, but this is for purposes of demonstration.
+I'm just going to run awk with the print command and  it will print every line in the file.  Normally I'd use a pager like less first to get a sense of the data structure, but this is for purposes of demonstration.
 
 
     michael@flaptop-deux ~/working/basic_commands $ awk '{ print }' /var/log/syslog.1  

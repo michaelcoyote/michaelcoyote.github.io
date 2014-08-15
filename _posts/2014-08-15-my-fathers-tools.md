@@ -29,52 +29,52 @@ Let's look at an average Linux system log. In this case syslog on Debian. I'll u
 I'm just going to run awk with the print command and  it will print every line in the file.  Normally I'd use aa pager like less to get a sense of the data structure, but this is for purposes of demonstration.
 
 {% highlight %}
-michael@flaptop-deux ~/working/basic_commands $ awk '{ print }' /var/log/syslog.1
-Jul 29 07:53:40 flaptop-deux rsyslogd: [origin software="rsyslogd" swVersion="5.8.6" x-pid="1023" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
-Jul 29 07:56:26 flaptop-deux anacron[32680]: Job `cron.daily' terminated
-Jul 29 07:56:26 flaptop-deux anacron[32680]: Normal exit (1 job run)
-Jul 29 08:09:02 flaptop-deux CRON[769]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 08:17:01 flaptop-deux CRON[835]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Jul 29 08:29:41 flaptop-deux NetworkManager[1121]: <warn> nl_recvmsgs() error: (-33) Dump inconsistency detected, interrupted
-Jul 29 08:41:35 flaptop-deux CRON[1220]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 08:45:12 flaptop-deux kernel: [458502.668733] gnome-screensav[1203]: segfault at 18 ip 00007f2b7fbff970 sp 00007fff3d3e8068 error 4 in libgdk-3.so.0.400.2[7f2b7fbc8000+79000]
-Jul 29 09:09:01 flaptop-deux CRON[1934]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 09:17:01 flaptop-deux CRON[2025]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Jul 29 09:39:02 flaptop-deux CRON[2215]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 10:05:30 flaptop-deux dhclient: DHCPREQUEST of 172.28.200.131 on wlan0 to 172.28.200.1 port 67
-Jul 29 10:05:30 flaptop-deux dhclient: DHCPACK of 172.28.200.131 from 172.28.200.1
-Jul 29 10:05:30 flaptop-deux dhclient: bound to 172.28.200.131 -- renewal in 30621 seconds.
-Jul 29 10:09:01 flaptop-deux CRON[2513]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 10:17:01 flaptop-deux CRON[2639]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Jul 29 10:39:01 flaptop-deux CRON[2899]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 11:09:01 flaptop-deux CRON[3163]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 11:17:01 flaptop-deux CRON[3235]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Jul 29 11:39:01 flaptop-deux CRON[3419]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 12:09:01 flaptop-deux CRON[3679]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 12:17:01 flaptop-deux CRON[3753]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Jul 29 12:39:01 flaptop-deux CRON[3928]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 13:09:01 flaptop-deux CRON[4170]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 13:17:01 flaptop-deux CRON[4240]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Jul 29 13:18:01 flaptop-deux kernel: [474871.824509] CE: hpet increased min_delta_ns to 30169 nsec
-Jul 29 13:18:01 flaptop-deux kernel: [474871.824659] CE: hpet increased min_delta_ns to 45253 nsec
-Jul 29 13:39:01 flaptop-deux CRON[4417]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 14:09:01 flaptop-deux CRON[4681]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 14:17:01 flaptop-deux CRON[4757]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Jul 29 14:39:01 flaptop-deux CRON[4933]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 15:09:01 flaptop-deux CRON[5186]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 15:17:01 flaptop-deux CRON[5257]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Jul 29 15:39:01 flaptop-deux CRON[5432]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 16:09:01 flaptop-deux CRON[5691]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 16:17:01 flaptop-deux CRON[5764]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Jul 29 16:39:01 flaptop-deux CRON[5954]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 17:09:01 flaptop-deux CRON[6209]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 17:17:01 flaptop-deux CRON[6278]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Jul 29 17:39:01 flaptop-deux CRON[6453]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 18:09:01 flaptop-deux CRON[6699]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
-Jul 29 18:17:01 flaptop-deux CRON[6790]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Jul 29 18:35:51 flaptop-deux dhclient: DHCPREQUEST of 172.28.200.131 on wlan0 to 172.28.200.1 port 67
-Jul 29 18:35:51 flaptop-deux dhclient: DHCPACK of 172.28.200.131 from 172.28.200.1
-Jul 29 18:35:51 flaptop-deux dhclient: bound to 172.28.200.131 -- renewal in 35595 seconds.
+michael@flaptop-deux ~/working/basic_commands $ awk '{ print }' /var/log/syslog.1  
+Jul 29 07:53:40 flaptop-deux rsyslogd: [origin software="rsyslogd" swVersion="5.8.6" x-pid="1023" x-info="http://www.rsyslog.com"] rsyslogd was HUPed  
+Jul 29 07:56:26 flaptop-deux anacron[32680]: Job `cron.daily' terminated  
+Jul 29 07:56:26 flaptop-deux anacron[32680]: Normal exit (1 job run)  
+Jul 29 08:09:02 flaptop-deux CRON[769]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)  
+Jul 29 08:17:01 flaptop-deux CRON[835]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)  
+Jul 29 08:29:41 flaptop-deux NetworkManager[1121]: <warn> nl_recvmsgs() error: (-33) Dump inconsistency detected, interrupted  
+Jul 29 08:41:35 flaptop-deux CRON[1220]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)  
+Jul 29 08:45:12 flaptop-deux kernel: [458502.668733] gnome-screensav[1203]: segfault at 18 ip 00007f2b7fbff970 sp 00007fff3d3e8068 error 4 in libgdk-3.so.0.400.2[7f2b7fbc8000+79000]  
+Jul 29 09:09:01 flaptop-deux CRON[1934]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)  
+Jul 29 09:17:01 flaptop-deux CRON[2025]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)  
+Jul 29 09:39:02 flaptop-deux CRON[2215]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)  
+Jul 29 10:05:30 flaptop-deux dhclient: DHCPREQUEST of 172.28.200.131 on wlan0 to 172.28.200.1 port 67 
+Jul 29 10:05:30 flaptop-deux dhclient: DHCPACK of 172.28.200.131 from 172.28.200.1 
+Jul 29 10:05:30 flaptop-deux dhclient: bound to 172.28.200.131 -- renewal in 30621 seconds. 
+Jul 29 10:09:01 flaptop-deux CRON[2513]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 10:17:01 flaptop-deux CRON[2639]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly) 
+Jul 29 10:39:01 flaptop-deux CRON[2899]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 11:09:01 flaptop-deux CRON[3163]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 11:17:01 flaptop-deux CRON[3235]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly) 
+Jul 29 11:39:01 flaptop-deux CRON[3419]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 12:09:01 flaptop-deux CRON[3679]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 12:17:01 flaptop-deux CRON[3753]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly) 
+Jul 29 12:39:01 flaptop-deux CRON[3928]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 13:09:01 flaptop-deux CRON[4170]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 13:17:01 flaptop-deux CRON[4240]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly) 
+Jul 29 13:18:01 flaptop-deux kernel: [474871.824509] CE: hpet increased min_delta_ns to 30169 nsec 
+Jul 29 13:18:01 flaptop-deux kernel: [474871.824659] CE: hpet increased min_delta_ns to 45253 nsec 
+Jul 29 13:39:01 flaptop-deux CRON[4417]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 14:09:01 flaptop-deux CRON[4681]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 14:17:01 flaptop-deux CRON[4757]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly) 
+Jul 29 14:39:01 flaptop-deux CRON[4933]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 15:09:01 flaptop-deux CRON[5186]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 15:17:01 flaptop-deux CRON[5257]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly) 
+Jul 29 15:39:01 flaptop-deux CRON[5432]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 16:09:01 flaptop-deux CRON[5691]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 16:17:01 flaptop-deux CRON[5764]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly) 
+Jul 29 16:39:01 flaptop-deux CRON[5954]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 17:09:01 flaptop-deux CRON[6209]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 17:17:01 flaptop-deux CRON[6278]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly) 
+Jul 29 17:39:01 flaptop-deux CRON[6453]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 18:09:01 flaptop-deux CRON[6699]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete) 
+Jul 29 18:17:01 flaptop-deux CRON[6790]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly) 
+Jul 29 18:35:51 flaptop-deux dhclient: DHCPREQUEST of 172.28.200.131 on wlan0 to 172.28.200.1 port 67 
+Jul 29 18:35:51 flaptop-deux dhclient: DHCPACK of 172.28.200.131 from 172.28.200.1 
+Jul 29 18:35:51 flaptop-deux dhclient: bound to 172.28.200.131 -- renewal in 35595 seconds. 
 Jul 29 18:39:01 flaptop-deux CRON[6978]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
 Jul 29 18:54:39 flaptop-deux avahi-daemon[1109]: Invalid response packet from host 172.28.200.125.
 Jul 29 19:09:01 flaptop-deux CRON[7270]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -d /var/lib/php5 ] && find /var/lib/php5/ -depth -mindepth 1 -maxdepth 1 -type f -cmin +$(/usr/lib/php5/maxlifetime) ! -execdir fuser -s {} 2>/dev/null \; -delete)
@@ -94,22 +94,22 @@ Jul 29 22:39:01 flaptop-deux CRON[9249]: (root) CMD (  [ -x /usr/lib/php5/maxlif
 Let's say we want to sift through the log to find every segmentation fault and print the line.  For that you would add a search string before the print line.
 
 ```
-michael@flaptop-deux ~/working/basic_commands $ awk '/segfault/ { print }' /var/log/syslog.1
-Jul 29 08:45:12 flaptop-deux kernel: [458502.668733] gnome-screensav[1203]: segfault at 18 ip 00007f2b7fbff970 sp 00007fff3d3e8068 error 4 in libgdk-3.so.0.400.2[7f2b7fbc8000+79000]
+michael@flaptop-deux ~/working/basic_commands $ awk '/segfault/ { print }' /var/log/syslog.1 
+Jul 29 08:45:12 flaptop-deux kernel: [458502.668733] gnome-screensav[1203]: segfault at 18 ip 00007f2b7fbff970 sp 00007fff3d3e8068 error 4 in libgdk-3.so.0.400.2[7f2b7fbc8000+79000] 
 ```
 
 So far I've been calling print with no options, but one of best features of Awk is that you can arbitrarily set the field separator character to anything. Normally it's space, but we can set it to colon for our example. We can then tell print to print the fifth field of the line which will give us the error message.
 
 ```
-michael@flaptop-deux ~/working/basic_commands $ awk -F: '/segfault/ { print $5}' /var/log/syslog.1
- segfault at 18 ip 00007f2b7fbff970 sp 00007fff3d3e8068 error 4 in libgdk-3.so.0.400.2[7f2b7fbc8000+79000]
+michael@flaptop-deux ~/working/basic_commands $ awk -F: '/segfault/ { print $5}' /var/log/syslog.1 
+ segfault at 18 ip 00007f2b7fbff970 sp 00007fff3d3e8068 error 4 in libgdk-3.so.0.400.2[7f2b7fbc8000+79000] 
 ```
 
 The line we get from awk is not at all spreadsheet ready. We also need the time and date. Let's turn it into a csv format file. To do this quickly I'm going to separate on the colon again and print the time and date with a comma separating the time/date and the error line. 
 
 ```
-michael@flaptop-deux ~/working/basic_commands $ awk -F: '/segfault/ { print $1":"$2","$5}' /var/log/syslog.1
-Jul 29 08:45, segfault at 18 ip 00007f2b7fbff970 sp 00007fff3d3e8068 error 4 in libgdk-3.so.0.400.2[7f2b7fbc8000+79000]
+michael@flaptop-deux ~/working/basic_commands $ awk -F: '/segfault/ { print $1":"$2","$5}' /var/log/syslog.1 
+Jul 29 08:45, segfault at 18 ip 00007f2b7fbff970 sp 00007fff3d3e8068 error 4 in libgdk-3.so.0.400.2[7f2b7fbc8000+79000] 
 ```
 
 This is good, but it leaves out the seconds. If we don't need seconds we can stop here, but if we want that data we will need to do a bit of extra work.
@@ -117,8 +117,8 @@ This is good, but it leaves out the seconds. If we don't need seconds we can sto
 To be able to get the seconds back into our data, we will have to take the third field (in the case of our example:"12 flaptop-deux kernel") and split it so that it only returns the first part. To do this we will process the data using "split" which takes the field, a variable name and a field separator, in ours case $3, s and a space (" "). 
 
 ```
-michael@flaptop-deux ~/working/basic_commands $ awk -F: '/segfault/ { split($3,s," ")
-print $1":"$2":"s[1]","$5}' /var/log/syslog.1
-Jul 29 08:45:12, segfault at 18 ip 00007f2b7fbff970 sp 00007fff3d3e8068 error 4 in libgdk-3.so.0.400.2[7f2b7fbc8000+79000]
+michael@flaptop-deux ~/working/basic_commands $ awk -F: '/segfault/ { split($3,s," ")  
+print $1":"$2":"s[1]","$5}' /var/log/syslog.1  
+Jul 29 08:45:12, segfault at 18 ip 00007f2b7fbff970 sp 00007fff3d3e8068 error 4 in libgdk-3.so.0.400.2[7f2b7fbc8000+79000]  
 ```
 

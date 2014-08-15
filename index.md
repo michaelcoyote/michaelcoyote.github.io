@@ -7,7 +7,7 @@ tagline: easy (and difficult) listening for all free tricksers...
 
 Just playing around with Jekyll and github blogs
 
-Here's a sample "posts list".
+Here, have a gorilla:
 
 <ul class="posts">
   {% for post in site.posts %}

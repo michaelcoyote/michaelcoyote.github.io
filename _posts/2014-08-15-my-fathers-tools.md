@@ -29,9 +29,8 @@ Awk is a very simple scripting language. Where there are a number of expressesio
 
     condition { action }
 
--- The condition can be any evaluated expression (e.g. a RegEx), or it can be BEGIN or END. The condition is true if omittied.  
- 
--- The action can be a command or series of commands.
+- The condition can be any evaluated expression (e.g. a RegEx), or it can be BEGIN or END. The condition is true if omittied.  
+- The action can be a command or series of commands.
 
 ### Writing a one line Awk command
 

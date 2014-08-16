@@ -9,20 +9,32 @@ tags: [awk,tech,tools,coyote]
 
 ### Awk and me.
 
-My first awareness of the Awk language was when I saw my dad's copy of "The AWK Programming Language". I was probably about 10 and computers were for playing games. When he explained that it was for processing text, my eyes probably glazed over. 
+My first awareness of the Awk language was when I saw my dad's copy of "The AWK Programming Language". I was about 10 and computers were for playing games. When he explained that it was for processing text, my eyes probably glazed over. 
 
-As I started learning about computers, got a computer of my own, and installed Linux/UNIX I remained dimly aware of Awk. While I am not a programmer, I learned my way around Perl for my text processing needs and snippets of other things (including Awk) for light duty work.
+As I started learning about computers, got a computer of my own, and installed Linux/UNIX, I remained dimly aware of Awk. While I am not a programmer, I learned my way around Perl for my own text processing needs and snippets of other things wrapped up in shell scripts (including Awk) for light duty work.
  
 Fast forward to a few years ago, and I was getting tired of resorting to Perl to do any sort of text processing of note. I had a need to pull data I needed out of a report, select what I needed, do some computation and create a new report.  
 
 I was already using Awk to extract the columns, so I added a bit of logic and regex to extract the lines I needed. With slightly more effort I was able to compute and report the data I wanted.
-
  
 ### Not your Father's Awk.
 
 I now find myself using Awk all the time, especially to prepare data for use in spreadsheets and databases. Data often comes to me poorly formatted and Awk has been a lifesaver in cleaning up data to prepare for use.
 
-Below is an example of the sort of basic stuff I do with awk. I knocked this together in a few minutes and is a demonstration of basic functionality. I might spend a bit more time if I was doing something for work, but maybe not.
+While there are a number of good general tutorials on Awk out on the internet as well as many example scripts and one-liners that can be modified to meet your needs, I didn't really see anything along the lines of a "getting started" guide to take new users through creating an Awk one liner to process some text.
+
+### Awk script structure
+
+Awk is a very simple scripting language. Where there are a number of expressesions that can be evaluated and commands that can be executed, the structure of a line in an Awk script is:
+
+    condition { action }
+
+-- The condition can be any evaluated expression (e.g. a RegEx), or it can be BEGIN or END. The condition is true if omittied. 
+-- The action can be a command or series of commands.
+
+### Writing a one line Awk command
+
+Below is an example of the sort of basic stuff I do with awk. I knocked this together in a few minutes and is a demonstration of basic functionality and how I go about writing an Awk script. I might spend a bit more time if I was doing something for work, but maybe not. YMMV.
 
 Let's look at an average Linux system log. In this case syslog on Debian. I'll used the most recently rotated out "syslog.1" file (I've manually cut out a number of lines since it's pretty big).
 

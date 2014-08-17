@@ -19,9 +19,11 @@ I was already using Awk to extract the columns, so I added a bit of logic and re
  
 ### Not your Father's Awk.
 
-I now find myself using Awk all the time, especially to prepare data for use in spreadsheets and databases. Data often comes to me poorly formatted and Awk has been a lifesaver in cleaning up data to prepare for use.
+I now find myself using Awk all the time, especially to prepare data for use in spreadsheets and databases. Data often comes to me poorly formatted and Awk has been a lifesaver in cleaning up data to prepare for use. It fills a good niche between a shell one liner and a full blown script.
 
-While there are a number of good general tutorials on Awk out on the internet as well as many example scripts and one-liners that can be modified to meet your needs, I didn't really see anything along the lines of a "getting started" guide to take new users through creating an Awk one liner to process some text.
+Awk has also been extended to be able to handle things such as networking and is now internet aware. This can be useful (especally for scraping web besed reports for content) and it's a good tool to have. And while it's a bit beyond the scope of this guide it can come in useful.
+
+There are a number of good general tutorials on Awk out on the internet as well as many example scripts and one-liners that can be modified to meet your needs, and I encourage you to seek them out. On the other hand, I didn't really see anything along the lines of a "getting started" guide to take new users through creating an Awk one liner to process some text.
 
 ### Awk script structure
 

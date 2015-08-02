@@ -22,11 +22,11 @@ Often, container makers will create a container right out of a full OS install o
 
 Another way to create containers is by creating a root directory with only the software components you need and then creating a tar file of that directory.
 
-Some advantages to these leaner containers:
-- less storage required
-- less disk I/O 
-- easier to audit
-- less updating to do when a vulnerability comes out
+Some advantages to these leaner containers:  
+- less storage required  
+- less disk I/O   
+- easier to audit  
+- less updating to do when a vulnerability comes out  
 
 These are all generally good things that will make ops and security people happy.
 
@@ -39,20 +39,20 @@ Build rootfs --> Import container --> Use Container
 #### Creating the rootfs
 
 You can use all sorts of tools to create the root FS as well.
-- [Buildroot](http://buildroot.uclibc.org/)
-- [Gentoo](https://www.gentoo.org/)
-- [debootstrap](https://wiki.debian.org/Debootstrap)
-- [yum](http://yum.baseurl.org/)/[dnf](http://dnf.baseurl.org/)
-- [Alpine](https://www.alpinelinux.org/)
-- others...
+- [Buildroot](http://buildroot.uclibc.org/)  
+- [Gentoo](https://www.gentoo.org/)  
+- [debootstrap](https://wiki.debian.org/Debootstrap)  
+- [yum](http://yum.baseurl.org/)/[dnf](http://dnf.baseurl.org/)  
+- [Alpine](https://www.alpinelinux.org/)  
+- others...   
 
 Brian's example used [Buildroot](http://buildroot.uclibc.org/) to create a root FS and that's what I'll do here.
 
-[Buildroot](http://buildroot.uclibc.org/) is nice for building your container because it:
-- builds software from scratch using checksummed sources
-- builds a tarball directly
-- easy menu based config
-- configuration diff file can be generated for future builds
+[Buildroot](http://buildroot.uclibc.org/) is nice for building your container because it:  
+- builds software from scratch using checksummed sources  
+- builds a tarball directly  
+- easy menu based config  
+- configuration diff file can be generated for future builds  
 
 To build using Buildroot, [download or `git clone`](http://buildroot.uclibc.org/download.html)the software and `cd` to the `buildroot` directory.
 
@@ -67,7 +67,7 @@ When you are satisfied with your selections run the `make` command. This will ta
 #### Importing your Container
 
 When finished, the buildroot `make` will leave a tarball of the root image in the `buildroot/output/images/` directory.
-You can import this into docker using the command: 
+You can import this into docker using the command:  
 `cat tarroot.tar |docker import - tagname`
 
 #### Using your Container

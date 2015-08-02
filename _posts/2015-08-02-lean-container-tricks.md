@@ -38,7 +38,7 @@ Build rootfs --> Import container --> Use Container
 
 #### Creating the rootfs
 
-You can use all sorts of tools to create the root FS as well.
+You can use all sorts of tools to create the root FS as well.  
 - [Buildroot](http://buildroot.uclibc.org/)  
 - [Gentoo](https://www.gentoo.org/)  
 - [debootstrap](https://wiki.debian.org/Debootstrap)  

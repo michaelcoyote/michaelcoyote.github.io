@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Radio Free Coyote
-tagline: easy (and difficult) listening for all free tricksers... 
+tagline: difficult listening for your earholes.
 ---
 {% include JB/setup %}
 

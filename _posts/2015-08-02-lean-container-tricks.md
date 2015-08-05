@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lean Container Tricks"
+title: "lean container tricks"
 description: ""
 category: 
 tags: [containers,tech,tools]

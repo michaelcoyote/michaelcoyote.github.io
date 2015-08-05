@@ -4,6 +4,9 @@ The quickest way to start and publish your Jekyll powered blog. 100% compatible 
 
 ## Usage
 
+
+`rake post["Title"]` creates a new post in the \_posts directory
+
 For all usage and documentation please see: <http://jekyllbootstrap.com>
 
 ## Version
@@ -37,4 +40,6 @@ The documentation website at <http://jekyllbootstrap.com> is maintained at https
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT)
+Jekyll is [MIT](http://opensource.org/licenses/MIT) licensed.
+
+Anything in \_posts or images in this repo is [CC BY-NC](http://creativecommons.org/licenses/by-nc/4.0/) and you can email me at michael @ ele-mental dot org for commercial use.

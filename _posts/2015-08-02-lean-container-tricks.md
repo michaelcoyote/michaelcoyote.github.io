@@ -78,12 +78,12 @@ You can start it up using `docker run -t -i tagname /bin/sh` and you will get ge
 
 You can use this container as is, but to make it easier to work with, manage and track, you can create a `Dockerfile` for it.
 
-Here is the basic `Dockerfile` as recommended by Brian.
+Here is the basic `Dockerfile` as recommended by Brian.  
 
 ```  
-FROM tagname
+FROM tagname  
 
-CMD ["/bin/sh"]
+CMD ["/bin/sh"]  
 ```  
 
 The command `docker build -t tagname:v1.0 .` should give you v1.0 of your docker image for use.

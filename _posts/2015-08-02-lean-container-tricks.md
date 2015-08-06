@@ -80,11 +80,11 @@ You can use this container as is, but to make it easier to work with, manage and
 
 Here is the basic `Dockerfile` as recommended by Brian.
 
-```
+```  
 FROM tagname
 
 CMD ["/bin/sh"]
-```
+```  
 
 The command `docker build -t tagname:v1.0 .` should give you v1.0 of your docker image for use.
 

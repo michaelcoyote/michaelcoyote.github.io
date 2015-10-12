@@ -1,5 +1,13 @@
 ---
 published: true
+layout: post
+title: playing with Prose.io
+description: ""
+category: null
+tags: 
+  - tech
+  - tools
+  - editors
 ---
 
 
@@ -18,3 +26,15 @@ I just had my first problem.  I was playing around with the GUI and I turned the
 
 I'm still not clear on how to "publish" I do see an "unpublished" at the top right corner, but after the "drafts" vs. "posts" thing, I'm kinda not wanting to touch it without a commit first.
 
+The publish button does set the publish metadata to true, but it dosen't actually include the needed metadata to publish. There's a place to do this by hand.  This needs to be better for a non-technical user to be able to navagate.
+
+Ideally I'd like to see a workflow like so:  
+1. Prompt for the post title
+	1. create the filename from the post title
+    2. put the title in the metadata
+2. inital commit with the post set to unpublished
+3. write with save/commit as desired
+4. publish
+	1. propmpt for tags
+    2. prompt for other metadata like summary
+    3. final commit

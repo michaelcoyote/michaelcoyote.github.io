@@ -32,16 +32,16 @@ I'm still not clear on how to "publish" I do see an "unpublished" at the top rig
 The publish button does set the publish metadata to true, but it dosen't actually include the needed metadata to publish. There's a place to do this by hand.  This needs to be better for a non-technical user to be able to navagate.
 
 Ideally I'd like to see a workflow like so:  
-1. Prompt for the post title
-	1. create the filename from the post title
-    2. put the title in the metadata
-2. inital commit with the post set to unpublished
-3. write with save/commit as desired
-4. publish
-	1. propmpt for tags
-    2. prompt for other metadata like summary
-    3. final commit
-
+1. Prompt for the post title  
+	1. create the filename from the post title  
+    2. put the title in the metadata  
+2. inital commit with the post set to unpublished  
+3. write with save/commit as desired  
+4. publish  
+	1. propmpt for tags  
+    2. prompt for other metadata like summary  
+    3. final commit  
+  
 Overall it's a mixed first impression.  It's cool to have a tool like this avalible however I think it's a ways off from being able to put a non-technical end user in front of and allowing them to get right to work.  There may be settings in the hosted version that allow a workload I've discribed above, but I've not experiemented with it at all to say.
 
 Another thing that I've not tested is the possiblity of using this editor with other static page generators.  This was recommended for use in conjunction with Jekyll, but I could guess it would work with other site generators with few modifications.

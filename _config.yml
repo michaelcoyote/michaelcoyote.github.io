@@ -28,7 +28,8 @@ production_url : http://michaelcoyote.github.io
 
 # Build Settings
 markdown: kramdown
-#  input: GFM
+kramdown:
+  input: GFM
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

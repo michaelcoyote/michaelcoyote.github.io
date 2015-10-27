@@ -26,6 +26,10 @@ author :
 #
 production_url : http://michaelcoyote.github.io
 
+# Build Settings
+markdown: kramdown
+  input: GFM
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
@@ -129,6 +133,3 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
 
-# Build Settings
-markdown: kramdown
-  input: GFM

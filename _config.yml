@@ -27,9 +27,10 @@ author :
 production_url : http://michaelcoyote.github.io
 
 # Build Settings
-markdown: kramdown
-kramdown:
-  input: GFM
+markdown: redcarpet
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+redcarpet:
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

@@ -3,19 +3,25 @@ layout: post
 title: "bash readline shortcuts"
 description: "bash key combinations and shortcuts"
 category: 
-tags: [coyote,tech,keyboard,bash]
+tags: [coyote,tech,keyboard,bash,readline]
 ---
-
 {% include JB/setup %}
 
 # Bash key combinations and shortcuts
+
+Over the last few years I spent a lot of time at the `bash` CLI, often on
+systems without my dotfiles loaded. I wanted to get faster but I couldn't rely
+on heavy customization. I put together this cheat sheet of `bash` keyboard
+shortcuts to help me power through issues on all sorts of systems.  Largely
+this was an exercise in learning them but I still do occasionally refer back to
+this page.
 
 The `bash` shell uses a library called GNU Readline that provides easy and 
 quick CLI key combination access to `bash` history, screen movement and line
 editing commands.  I've collected some of these here along with some builtin
 bash shortcuts for history and other functions.  
 
-Note: The command `bind -p` will list all the keybindings and the readline
+Note: The command `bind -p` will list all the keybindings and the Readline
 functions they call.  
 
 ## Cursor Movement
@@ -36,7 +42,7 @@ functions they call.
 
 | command           | description                                             |
 |-------------------|---------------------------------------------------------|
-| alt + .           | Print the last argument (ie "vim file1.txt file2.txt" will yield "file2.txt") |
+| alt + .           | Print the last argument (i.e. "vim file1.txt file2.txt" will yield "file2.txt") |
 | esc + t           | Swap last two words before the cursor                   |
 | ctl + d           | Delete the character under the cursor                   |
 | ctl + h           | Delete character before the cursor                      |

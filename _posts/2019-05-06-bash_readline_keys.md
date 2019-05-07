@@ -26,6 +26,7 @@ functions they call.
 
 ## Cursor Movement
 
+{:class="table table-bordered"}
 | command           | description                                             |
 |-------------------|---------------------------------------------------------|
 | ctl + a           | Goto beginning of command line                          |
@@ -40,6 +41,7 @@ functions they call.
 
 ## Line editing
 
+{:class="table table-bordered"}
 | command           | description                                             |
 |-------------------|---------------------------------------------------------|
 | alt + .           | Print the last argument (i.e. "vim file1.txt file2.txt" will yield "file2.txt") |
@@ -58,6 +60,7 @@ functions they call.
 
 ## History 
 
+{:class="table table-bordered"}
 | command           | description                                             |
 |-------------------|---------------------------------------------------------|
 | `!!`              | Run previous command (e.g. `sudo !!`)                   |
@@ -75,6 +78,7 @@ functions they call.
 
 ## Job control
 
+{:class="table table-bordered"}
 | command           | description                                             |
 |-------------------|---------------------------------------------------------|
 | ctl + c           | Kill current process                                    |
@@ -82,6 +86,7 @@ functions they call.
 
 ## Other Misc.
 
+{:class="table table-bordered"}
 | command           | description                                             |
 |-------------------|---------------------------------------------------------|
 | ~[TAB][TAB]       | List all users                                          |

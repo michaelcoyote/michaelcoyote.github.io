@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Bash Readline Keyboard Shortcuts"
-description: "Bash key combinations and shortcuts"
+title: "bash readline shortcuts"
+description: "bash key combinations and shortcuts"
 category: 
 tags: [coyote,tech,keyboard,bash]
 ---

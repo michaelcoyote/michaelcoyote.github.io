@@ -8,8 +8,7 @@ tags: [coyote,tech,keyboard,bash]
 
 {% include JB/setup %}
 
-Bash key combinations and shortcuts
-===================================
+# Bash key combinations and shortcuts
 
 The `bash` shell uses a library called GNU Readline that provides easy and 
 quick CLI key combination access to `bash` history, screen movement and line

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Aerospike Database Glossary"
+title: "aerospike database glossary"
 description: "Extended glossary for the Aeerospike distributed database"
 category:
 tags: [coyote,tech,aerospike,glossary]

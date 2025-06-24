@@ -200,6 +200,7 @@ table {
     background-color: #eef;
     font-size: 85%;
     padding: 0 .2em;
+    overflow-wrap: break-word;
   }
 
     #post pre code {

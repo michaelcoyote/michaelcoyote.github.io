@@ -3,7 +3,7 @@ layout: post
 title: "concourse-ci testing"
 description: "Testing out concourse-ci with fossa"
 category: 
-tags: [coyote,tech]
+tags: [coyote,tech,ci]
 ---
 {% include JB/setup %}
 

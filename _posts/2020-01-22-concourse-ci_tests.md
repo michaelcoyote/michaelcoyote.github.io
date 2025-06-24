@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "...reboot"
-description: "speak so that I may see you"
+title: "concourse-ci testing"
+description: "Testing out concourse-ci with fossa"
 category: 
 tags: [coyote,tech]
 ---

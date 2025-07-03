@@ -13,11 +13,12 @@ highlighter: rouge
 # so be sure to set them if your theme uses them.
 #
 title: radio free coyote
-tagline: difficult listening...
+tagline: now broadcasting on all frequencies...
 author:
   name: michael coyote
   email: michael at guldan dot net
   github: michaelcoyote
+  fediverse: https://mastodon.social/@michaelcoyote
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt

@@ -2,7 +2,7 @@
 layout: post
 title: "distributed database overview"
 description: "A high level technical overview of distributed databases"
-category:
+category: tech
 tags: [coyote,tech,cap,database,glossary]
 ---
 {% include JB/setup %}

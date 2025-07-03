@@ -3,7 +3,7 @@ published: true
 layout: post
 title: playing with prose.io
 description: ""
-category: null
+category: tech null
 tags: 
   - tech
   - tools

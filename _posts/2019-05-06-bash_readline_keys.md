@@ -2,7 +2,7 @@
 layout: post
 title: "bash readline shortcuts"
 description: "bash key combinations and shortcuts"
-category: 
+category: tech 
 tags: [coyote,tech,keyboard,bash,readline]
 ---
 {% include JB/setup %}

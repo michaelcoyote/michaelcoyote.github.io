@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "on my wavelength..."
+title: "on this wavelength..."
 description: "speak so that I may see you"
-category: 
+category: meta
 tags: [coyote,music,art,politics,tech,food,urbanism]
 ---
 {% include JB/setup %}

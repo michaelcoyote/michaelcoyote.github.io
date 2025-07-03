@@ -2,7 +2,7 @@
 layout: post
 title: "aerospike database glossary"
 description: "Extended glossary for the Aeerospike distributed database"
-category:
+category: tech
 tags: [coyote,tech,aerospike,glossary]
 ---
 {% include JB/setup %}

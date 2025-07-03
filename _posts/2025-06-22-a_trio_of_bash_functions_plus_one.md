@@ -2,7 +2,7 @@
 layout: post
 title: "A trio of bash functions (plus one)"
 description: "Testing out concourse-ci with fossa"
-category: 
+category: tech 
 tags: [coyote,tech,bash,functions]
 ---
 

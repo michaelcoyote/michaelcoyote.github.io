@@ -2,7 +2,7 @@
 layout: post
 title: "my father's tools.."
 description: ""
-category: 
+category: tech
 tags: [awk,tech,tools,coyote]
 ---
 {% include JB/setup %}

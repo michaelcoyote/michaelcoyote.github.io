@@ -2,7 +2,7 @@
 layout: post
 title: "quickly processing stacktraces"
 description: "Turn a bunch of stacktraces into a file name and line number"
-category: 
+category: tech 
 tags: [coyote,tech,awk,debugging,troubleshooting,stacktraces]
 ---
 

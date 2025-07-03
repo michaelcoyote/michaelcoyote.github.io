@@ -2,7 +2,7 @@
 layout: post
 title: "concourse-ci testing"
 description: "Testing out concourse-ci with fossa"
-category: 
+category: tech 
 tags: [coyote,tech,ci]
 ---
 {% include JB/setup %}

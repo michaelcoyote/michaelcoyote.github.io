@@ -2,7 +2,7 @@
 layout: post
 title: "lean container tricks"
 description: ""
-category: 
+category: tech 
 tags: [containers,tech,tools]
 ---
 {% include JB/setup %}

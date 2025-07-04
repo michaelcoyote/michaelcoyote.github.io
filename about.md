@@ -6,8 +6,8 @@ title: about the gorilla
 
 # about
 
-I'm Michael I've been on the internet for 30+ years and as of 2025
-I've had this particular blog up for about 10 years now which is a very long
+I'm Michael and I've been on the internet for 30+ years, and as of 2025 I've 
+had this particular blog up for about 10 years now which is a very long
 time in internet years.  
 It's a very ancient Jekyll blog and I've hacked it up to make it sort of work 
 for what I want.  I've been blogging very haphazardly for most of my time here,

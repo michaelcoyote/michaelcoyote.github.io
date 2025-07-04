@@ -37,5 +37,5 @@ I've not set up any sort of commenting here, but I can be found [on the
 Fediverse]({{ site.author.fediverse }}) and I'd love to chat with you there. I
 am also occasionally on other social networks but much more rarely.  
 
-I am also available via [email]({{mailto:site.author.email }}) if you'd like to reach
+I am also available via [email](mailto:{{site.author.email }}) if you'd like to reach
 me that way.  

@@ -123,7 +123,7 @@ table {
 }
 
   .site .title a {
-    color: #a00;
+    color: #b00;
     text-decoration: none;
   }
 
@@ -132,7 +132,7 @@ table {
   }
 
   .site .title a.extra {
-    color: #aaa;
+    color: #a66;
     text-decoration: none;
     margin-left: 1em;
   }

@@ -1,11 +1,10 @@
 ---
 layout: page
 title: radio free coyote
-tagline: difficult listening.
 ---
 {% include JB/setup %}
 
-#### Here, have a gorilla:
+#### ...here, have a gorilla:
 
 <ul class="posts">
   {% for post in site.posts %}

@@ -1,15 +1,13 @@
 ---
 layout: post
 title: "distributed database overview"
-description: "A high level technical overview of distributed databases"
+description: "A high level overview of distributed databases"
 category: tech
-tags: [coyote,tech,cap,database,glossary]
+tags: [coyote,tech,cap theorem , destributed databases ,database,glossary]
 ---
 {% include JB/setup %}
 
 
-
-# Distributed DB Overview
 
 ## Document Scope
 

@@ -1,14 +1,12 @@
 ---
 layout: post
 title: "lean container tricks"
-description: ""
+description: "Building a container from start to finish using buildroot"
 category: tech 
 tags: [containers,tech,tools]
 ---
 {% include JB/setup %}
 
-
-# Lean Container Tricks
 
 I would like to thank [Brian "Redbeard"](https://github.com/brianredbeard) of CoreOS who had a very good talk recently about making lightweight containers. I wanted to write this up as a summary of what he covered and a quick cheat sheet for myself and others. 
 

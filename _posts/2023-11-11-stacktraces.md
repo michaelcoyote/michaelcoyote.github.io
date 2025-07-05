@@ -6,8 +6,6 @@ category: tech
 tags: [coyote,tech,awk,debugging,troubleshooting,stacktraces]
 ---
 
-## Stacktraces
-
 Sometimes we need to convert stacktraces from a bunch of different servers running the same binary to file names and line numbers.  This is a handy way to do it assuming the node name is at the beginning of the stacktrace line.
 
 Grep out stacktraces from all the server log files:

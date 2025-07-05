@@ -75,6 +75,22 @@ ul.posts {
   }
 
 
+ul.descriptions {
+  list-style-type: none;
+  margin-bottom: 0em;
+}
+
+  ul.descriptions li {
+    line-height: 1.75em;
+  }
+
+  ul.descriptions span {
+    color: #aaa;
+    font-family: helvetica, arial, clean, sans-serif, monospace;
+    font-size: 80%;
+  }
+
+
 
 table {
   padding: 0; 

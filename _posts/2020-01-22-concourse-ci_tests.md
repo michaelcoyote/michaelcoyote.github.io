@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "concourse-ci testing"
-description: "Testing out concourse-ci with fossa"
+description: "Exploring concourse-ci and it's workflows..."
 category: tech 
 tags: [coyote,tech,ci]
 ---

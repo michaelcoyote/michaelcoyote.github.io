@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A trio of bash functions (plus one)"
-description: "Testing out concourse-ci with fossa"
+description: "Thinking about shell workflows and functions"
 category: tech 
 tags: [coyote,tech,bash,functions]
 ---
@@ -9,7 +9,7 @@ tags: [coyote,tech,bash,functions]
 
 
 
-Infamous internet user [Mike Hoye](https://exple.tive.org/blarg/) had an [excellent prompt question](https://mastodon.social/@mhoye/114592067766102376) and it got me thinking about the bash functions I use the most.  There are three file and directory functions that live in my `~/.bash_functions` file and a helper function I'm documenting here for myself and others. 
+Infamous internet user [Mike Hoye](https://exple.tive.org/blarg/) had an [excellent prompt question](https://mastodon.social/@mhoye/114592067766102376) and it got me thinking about the bash functions I use the most.  Here are three file and directory functions that live in my `~/.bash_functions` file and a helper function I'm documenting here for myself and others. 
 
 Another purpose of writing this up is to think about how I use the system and how I create functions.  I think for the longest time I would try to build out every use I could think of but would get hung up in details and when I did finish in general I'd use one. I changed my thinking around this and do quick hits that fill the one need right away and iterate around that **if needed**.  Often it's not, or if a change is needed it's something I think of after years of using that tool and sometimes after work habits have changed.  These functions are not the most complete, but they're very useful ones written around this way of thinking.  
 

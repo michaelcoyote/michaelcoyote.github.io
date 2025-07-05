@@ -1,16 +1,15 @@
 ---
 layout: post
 title: "aerospike database glossary"
-description: "Extended glossary for the Aeerospike distributed database"
+description: "Extended glossary of terms for the Aerospike distributed database"
 category: tech
 tags: [coyote,tech,aerospike,glossary]
 ---
-{% include JB/setup %}
 
 
-# Aerospike Database Glossary
+One of the biggest impediments to learning Aerospike as a new user is mastering the vocabulary.  I started this glossary in my spare time as an aide to myself and refined it over the course of several years of working with the database.   
 
-One of the biggest impediments to learning Aerospike as a new user is mastering the vocabulary.  I started this glossary in my spare time as an aide to myself and refined it over the course of several years of working with the database.  I had wonderful feedback from others I've worked with to insure that it was complete and up-to-date. I'm sharing this as an effort to help others learn and gain better understanding the foundations of Aerospike.
+I had wonderful feedback from others I've worked with to insure that it was complete and up-to-date. I'm sharing this as an effort to help others learn and gain better understanding the foundations of Aerospike.  
 
 
 | Term                   | Definition                                                   |

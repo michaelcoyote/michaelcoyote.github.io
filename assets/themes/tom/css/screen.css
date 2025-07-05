@@ -78,6 +78,7 @@ ul.posts {
 ul.descriptions {
   list-style-type: none;
   margin-bottom: 0em;
+  padding-left: 4.5em;
 }
 
   ul.descriptions li {

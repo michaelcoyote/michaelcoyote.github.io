@@ -61,7 +61,7 @@ table {
 
 ul.posts {
   list-style-type: none;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
   ul.posts li {
@@ -74,7 +74,6 @@ ul.posts {
     font-size: 80%;
   }
 
-
 ul.descriptions {
   list-style-type: none;
   margin-bottom: 0em;
@@ -82,7 +81,7 @@ ul.descriptions {
 }
 
   ul.descriptions li {
-    line-height: 1.75em;
+    line-height: 1.5em;
   }
 
   ul.descriptions span {
@@ -131,14 +130,36 @@ table {
   font-size: 120%;
   text-align: justify;
   width: 40em;
-  margin: 3em auto 2em auto;
+  margin: 1em auto 2em auto;
   line-height: 1.5em;
+}
+
+/*
+.header {
+  position: relative;
+  display: block;
+  border: 0;
+  margin-bottom: 0em;
+}
+*/
+
+
+.header {
+  position: relative;
+  width: 50em;
+  /* height: 22em; */
+  margin: 0em auto;
+  margin-top: 2em;
+  margin-bottom: 0em;
+  display: block;
+  border: 0;
 }
 
 .title {
   color: #a00;
   font-weight: bold;
-  margin-bottom: 2em;
+  margin: 1em auto 2em auto;
+  margin-bottom: .5em;
 }
 
   .site .title a {

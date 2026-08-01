@@ -7,7 +7,7 @@ tags: [coyote,tech,python,cryptography]
 ---
 
 
-This one was just a quick project to see if I could put together a bare socket server
+[This one](https://github.com/michaelcoyote/code_examples/tree/master/py/tls) was just a quick project to see if I could put together a bare socket server
 and client with TLS in python without too much trouble. I also wanted to see how the
 TOML library works (it works fine and it's simple).  
 

@@ -1,18 +1,8 @@
-# Michael Guldan
+# Resume of Michael Guldan
 
 -  michael (at) guldan (dot) net
 
 Customer-focused technical leader with 15+ years solving complex systems problems at scale. I partner with customers to diagnose root causes, architect sustainable solutions, and align technical strategies with business goals. Experienced in translating customer needs into product impact and guiding accounts through high-stakes deployments and performance optimization. Comfortable operating across support, solutions architecture, and consulting engagements in both startup and enterprise environments.
-
-**SKILLS**
-
-***Software:***  Aerospike, PostgreSQL, Cassandra, Grafana, Wireshark/Tcpdump, iperf3
-
-***Infrastructure:***  AWS, GCE, Docker/Rocket, Kubernetes, CI/CD, Vmware, Proxmox
-
-***Observability/Tools:***  Grafana, Prometheus, ElasticSearch, JIRA, Salesforce
-
-***Languages:***  Python, Bash/shell, SQL, AWK
 
 ## Work Experience
 
@@ -76,3 +66,13 @@ _Storage, Network and Systems Consultancy_
 - Storage and backup expertise: Planned and implemented multi-petabyte backup strategies and storage systems for enterprise environments ranging from hundreds of terabytes to multi-datacenter deployments; directed resolution of high-profile production incidents for commercial backup products.
 - Infrastructure advisory: Advised CIOs and IT managers on network equipment, server architecture, and systems purchasing; redesigned network infrastructure for efficiency and security; managed emergency incident response (e.g., upstream ISP migration with zero downtime).
 - Team leadership and domain depth: Directed other consultants and staff through implementation, training, and troubleshooting; assessed organizational storage and systems capability to inform long-term planning; documented and standardized deployed environments.
+
+**SKILLS**
+
+***Software:***  Aerospike, PostgreSQL, Cassandra, Grafana, Wireshark/Tcpdump, iperf3
+
+***Infrastructure:***  AWS, GCE, Docker/Rocket, Kubernetes, CI/CD, Vmware, Proxmox
+
+***Observability/Tools:***  Grafana, Prometheus, ElasticSearch, JIRA, Salesforce
+
+***Languages:***  Python, Bash/shell, SQL, AWK

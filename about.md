@@ -7,7 +7,7 @@ title: about the gorilla
 # about
 
 I'm Michael and I've been on the internet for 30+ years, and as of 2025 I've 
-had this particular blog up for about 10 years now which is a very long
+had this particular blog up for about 10 years now which is a pretty long
 time in internet years.  
 It's a very ancient Jekyll blog and I've hacked it up to make it sort of work 
 for what I want.  I've been blogging very haphazardly for most of my time here,
@@ -30,8 +30,9 @@ I tidy up quickly and push out the door.  I also think that spending ages on a
 post is a recipe for not posting.   
 
 I do collect stats on posts and I can see what gets indexed so I can
-see what weird things people are picking up on, but I'll likely just keep
-posting my random posts with my [weird sense of humor](https://en.wikipedia.org/wiki/The_Goon_Show_running_jokes).
+see what weird things people are picking up on, but for now I'll just
+continue with my "junk drawer" theme and perhaps add in some interesting links
+posts.
 
 I've not set up any sort of commenting here, but I can be found [on the
 Fediverse]({{ site.author.fediverse }}) and I'd love to chat with you there. I

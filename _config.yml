@@ -20,6 +20,7 @@ author:
   email: michael at guldan dot net
   github: michaelcoyote
   fediverse: https://mastodon.social/@michaelcoyote
+  atproto: https://bsky.app/profile/michaelcoyote.bsky.social
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt

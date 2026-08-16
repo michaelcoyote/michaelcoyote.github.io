@@ -1,45 +1,35 @@
-# Jekyll-Bootstrap
+# Michael's Jekyll GitHub Pages
 
-The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
+A somewhat hacked up and cut down version of a standard github pages site.  There's a hardwired "dark" theme for now. It's the rat-rod of Jekyll blogs.
 
 ## Usage
 
 
 `rake post["Title"]` creates a new post in the \_posts directory
 
-For all usage and documentation please see: <http://jekyllbootstrap.com>
+When making changes it can be helpful to run a local server using `bundle exec jekyll serve`
+
+To clear the cache to make sure your changes are picked up run:
+```bash
+rm -rf _site .jekyll-cache
+bundle exec jekyll build
+```
+
+## The `dark` theme
+
+Again it's just `tom` hacked up to be "dark mode", meaning I manually edited the `screen.css` and `syntax.css` files.  Yes it was tedious but I wanted to know how it worked.
+
+To add the theme, I changed the following
+`_layouts/default.html` - Edited the theme name to `dark` and edited the include to `{% include themes/dark/page.html %}`
+I also changed the include in `_layouts/post.html` and `_layouts/page.html` to change the include as well.
 
 ## Version
 
-0.3.0 - stable and versioned using [semantic versioning](http://semver.org/).
-
-**NOTE:** 0.3.0 introduces a new theme which is not backwards compatible in the sense it won't _look_ like the old version.
-However, the actual API has not changed at all.
-You might want to run 0.3.0 in a branch to make sure you are ok with the theme design changes.
-
-## Contributing
-
-
-To contribute to the framework please make sure to checkout your branch based on `jb-development`!!
-This is very important as it allows me to accept your pull request without having to publish a public version release.
-
-Small, atomic Features, bugs, etc.
-Use the `jb-development` branch but note it will likely change fast as pull requests are accepted.
-Please rebase as often as possible when working.
-Work on small, atomic features/bugs to avoid upstream commits affecting/breaking your development work.
-
-For Big Features or major API extensions/edits:
-This is the one case where I'll accept pull-requests based off the master branch.
-This allows you to work in isolation but it means I'll have to manually merge your work into the next public release.
-Translation : it might take a bit longer so please be patient! (but sincerely thank you).
-
-**Jekyll-Bootstrap Documentation Website.**
-
-The documentation website at <http://jekyllbootstrap.com> is maintained at https://github.com/plusjade/jekyllbootstrap.com
+This was forked from Jekyll-Bootstrap v0.3.0.  I've hacked it to bits since then and deleted a bunch of things I didn't want. Do not use this as a guide for how to use Jekyll-Bootstrap.  I'm sure people would be wondering why I did it this way.  
 
 
 ## License
 
 Jekyll is [MIT](http://opensource.org/licenses/MIT) licensed.
 
-Anything in \_posts or images in this repo is [CC BY-NC](http://creativecommons.org/licenses/by-nc/4.0/) and you can email me at michael @ ele-mental dot org for commercial use.
+Anything in \_posts or images in this repo is [CC BY-NC](http://creativecommons.org/licenses/by-nc/4.0/) and you can email me at michael @ guldan dot net for commercial use.

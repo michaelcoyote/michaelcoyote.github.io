@@ -1,3 +1,9 @@
+---
+layout: page
+title: radio free coyote
+---
+{% include JB/setup %}
+
 # Resume of Michael Guldan
 
 -  michael (at) guldan (dot) net

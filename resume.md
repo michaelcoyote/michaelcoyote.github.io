@@ -6,7 +6,7 @@ title: radio free coyote
 
 # Resume of Michael Guldan
 
--  michael (at) guldan (dot) net
+Contact:  michael (at) guldan (dot) net
 
 Customer-focused technical leader with 15+ years solving complex systems problems at scale. I partner with customers to diagnose root causes, architect sustainable solutions, and align technical strategies with business goals. Experienced in translating customer needs into product impact and guiding accounts through high-stakes deployments and performance optimization. Comfortable operating across support, solutions architecture, and consulting engagements in both startup and enterprise environments.
 
